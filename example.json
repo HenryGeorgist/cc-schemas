@@ -1,4 +1,55 @@
 {
-    "$schema": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"
-    
+    "$id": "https://henrygeorgist.github.io/cc-schemas/example.schema.json",
+    "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/action.schema.json"}],
+    "properties": {
+        "name":{
+            "type": "string",
+            "enum": ["all-samples", "single-sample"]
+        },
+        "inputs":{
+            "type": "array",
+            "items":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+            },
+            "minItems":1,
+            "contains":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}],
+                "properties":{
+                    "name":"fragilitycurve",
+                    "paths":{
+                        "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}],
+                        "required": ["default"]
+                    }
+                }
+            }
+        },        
+        "outputs":{
+            "type": "array",
+            "items":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+            },
+            "minItems":1,
+            "contains":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}],
+                "properties":{
+                    "name":"failure_elevations",
+                    "paths":{
+                        "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}],
+                        "required": ["default", "event"]
+                    }
+                }
+            }
+        },
+        "attributes": {
+            "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}],
+            "properties":{
+                "seeds-format":{
+                    "type":"boolean"
+                },
+                "elevations-format":{
+                    "type":"boolean"
+                }
+            }
+        }
+    }
 }
