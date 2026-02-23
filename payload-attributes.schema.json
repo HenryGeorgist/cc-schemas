@@ -1,6 +1,6 @@
 {
     "$id": "https://henrygeorgist.github.io/cc-schemas/payload-attributes",
-    "type": "object",
+    "type": ["object","string", "number", "boolean"],
     "patternProperties": {
         "^[a-z]+(-[a-z0-9]+)*$": {
           "type": "object"
