@@ -15,7 +15,10 @@
             "contains":{
                 "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}],
                 "properties":{
-                    "name":"fragilitycurve",
+                    "name":{
+                        "type": "string",
+                        "enum": ["fragilitycurve"]
+                    },
                     "paths":{
                         "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}],
                         "required": ["default"]
@@ -32,7 +35,10 @@
             "contains":{
                 "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}],
                 "properties":{
-                    "name":"failure_elevations",
+                    "name":{
+                        "type": "string",
+                        "enum": ["failure_elevations"]
+                    },
                     "paths":{
                         "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}],
                         "required": ["default", "event"]
