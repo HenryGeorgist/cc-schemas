@@ -12,6 +12,9 @@
             "type": "string",
             "enum": ["link", "extract", "run", "utils"]
         },
+        "attributes":{
+            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}]
+        },
         "inputs":{
             "items":{
                 "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
