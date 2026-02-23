@@ -1,0 +1,20 @@
+{
+    "$id": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "paths": {
+            "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}]
+        },
+        "data_paths": {
+            "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}]
+        },
+        "store_name": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": ["name", "paths", "store_name"]
+}
