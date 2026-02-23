@@ -1,0 +1,19 @@
+{
+    "$id": "https://henrygeorgist.github.io/cc-schemas/data-store",
+    "properties": {
+        "name": {
+        "type": "string"
+        },
+        "store_type": {
+        "type": "string"
+        },
+        "profile": {
+        "type": "string"
+        },
+        "params": {
+        "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema"}]
+        }
+    },
+    "additionalProperties": false,
+    "type": "object"
+}
