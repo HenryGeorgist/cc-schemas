@@ -1,12 +1,7 @@
 {
     "$id": "https://henrygeorgist.github.io/cc-schemas/payload-attributes",
-    "$ref": "#/$defs/PayloadAttributes",
-    "$defs": {
-        "PayloadAttributes": {
-            "additionalProperties": {
-              "type": "string"
-            },
-            "type": "object"
-          }
-    }
+    "additionalProperties": {
+        "type": "string"
+    },
+    "type": "object"
 }
