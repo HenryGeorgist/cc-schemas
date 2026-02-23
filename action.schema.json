@@ -1,0 +1,36 @@
+{
+    "$id": "https://henrygeorgist.github.io/cc-schemas/action.schema.json",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string",
+            "enum": ["link", "extract", "run", "utils"]
+        },
+        "inputs":{
+            "items":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+            },
+            "type": "array"
+        },
+        "outputs":{
+            "items":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+            },
+            "type": "array"
+        },
+        "stores": {
+            "items":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json"}]
+            },
+            "type": "array"
+        }
+    },
+    "additionalProperties": false,
+    "required": ["name"]
+}
