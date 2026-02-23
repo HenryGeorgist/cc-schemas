@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/data-store",
+    "$id": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json",
     "properties": {
         "name": {
         "type": "string"

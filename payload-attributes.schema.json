@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/payload-attributes",
+    "$id": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json",
     "type": "object",
     "patternProperties": {
         "^[a-z]+(-[a-z0-9]+)*$": {
