@@ -11,9 +11,10 @@
         "type": "string"
         },
         "params": {
-        "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema"}]
+            "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema"}]
         }
     },
+    "required": ["name", "store_type", "profile", "params"],
     "additionalProperties": false,
     "type": "object"
 }
