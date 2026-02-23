@@ -5,7 +5,8 @@
         "type": "string"
         },
         "store_type": {
-        "type": "string"
+        "type": "string",
+        "enum": ["FS", "S3"]
         },
         "profile": {
         "type": "string"

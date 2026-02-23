@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/s3-data-store.schema.json",
+    "$id": "https://henrygeorgist.github.io/cc-schemas/s3-and-fs-data-store.schema.json",
     "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json"}],
     "properties": {
         "params": {
