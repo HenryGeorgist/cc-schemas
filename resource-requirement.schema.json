@@ -1,0 +1,18 @@
+{
+    "$id": "https://henrygeorgist.github.io/cc-schemas/resource-requirement.schema.json",
+    "type": "object",
+    "properties": {
+        "resource_type": {
+          "type": "string",
+          "enum":["VCPU", "MEMORY"]
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "resource_type",
+        "value"
+      ]
+}
