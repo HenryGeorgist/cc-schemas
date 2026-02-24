@@ -1,0 +1,26 @@
+{
+    "$id": "https://henrygeorgist.github.io/cc-schemas/payload-inputs.schema.json",
+    "type": "object",
+    "properties": {
+        "environment": {
+            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/key-value-pairs.schema.json"}]
+        },
+        "parameters": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            }
+        },
+        "data_sources": {
+            "items":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+            },
+            "type": "array"
+        },
+        "payload_attributes":{
+            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}]
+        }
+    },
+    "additionalProperties": false,
+    "required": ["name"]
+}

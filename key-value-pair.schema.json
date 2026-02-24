@@ -1,0 +1,17 @@
+{
+    "$id": "https://henrygeorgist.github.io/cc-schemas/key-value-pair.schema.json",
+    "type": "object",
+    "properties": {
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value"
+      ]
+}
