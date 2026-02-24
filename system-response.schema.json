@@ -1,0 +1,33 @@
+{
+    "$id": "https://henrygeorgist.github.io/cc-schemas/system-response.schema.json",
+    "type": "object",
+    "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/compute-manifest.schema.json"}],
+    "properties": {
+        "inputs": {
+            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/plugin-inputs.schema.json"}],
+            "properties": {
+                "payload_attributes":{
+                    "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}],
+                    "properties": {
+                        "scenario":{
+                            "type":"string"
+                        },
+                        "outputroot":{
+                            "type":"string"
+                        }
+                    },
+                    "required": ["scenario", "outputroot"]
+                }
+            },
+            "required": ["payload_attributes"]
+        },
+        "actions":{
+            "minItems": 1,
+            "contains":{
+                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/all-samples-action.schema.json"}]
+            }
+        }
+
+    },
+    "required": ["stores", "manifest_name","plugin_definition", "inputs", "actions"]
+}

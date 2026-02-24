@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/example.schema.json",
+    "$id": "https://henrygeorgist.github.io/cc-schemas/all-samples-action.schema.json",
     "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/action.schema.json"}],
     "properties": {
         "name":{
