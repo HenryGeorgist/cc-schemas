@@ -21,6 +21,5 @@
             "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}]
         }
     },
-    "additionalProperties": false,
-    "required": ["name"]
+    "additionalProperties": false
 }
