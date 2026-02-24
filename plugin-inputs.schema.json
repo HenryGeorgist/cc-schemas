@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/payload-inputs.schema.json",
+    "$id": "https://henrygeorgist.github.io/cc-schemas/plugin-inputs.schema.json",
     "type": "object",
     "properties": {
         "environment": {
