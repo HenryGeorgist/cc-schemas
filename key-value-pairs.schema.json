@@ -1,6 +1,7 @@
 {
     "$id": "https://henrygeorgist.github.io/cc-schemas/key-value-pairs.schema.json",
     "type": "array",
+    "title": "Key Value Pairs",
     "items": {
       "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/key-value-pair.schema.json"}]
     }

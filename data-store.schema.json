@@ -2,14 +2,20 @@
     "$id": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json",
     "properties": {
         "name": {
-        "type": "string"
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the store that will be used by data sources to identify where data is stored."
         },
         "store_type": {
         "type": "string",
+        "title": "Store Type",
+        "description": "The type of store.",
         "enum": ["FS", "S3"]
         },
         "profile": {
-        "type": "string"
+        "type": "string",
+        "title": "Profile",
+        "description": "The profie is used to support associating credentials to the store within the container"
         },
         "params": {
             "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}]
