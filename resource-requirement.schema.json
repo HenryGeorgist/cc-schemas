@@ -4,10 +4,14 @@
     "properties": {
         "resource_type": {
           "type": "string",
+          "title": "Resource Type",
+          "description": "This allows you to override the default number of vCPUs or Memory applied to the container for this manifest",
           "enum":["VCPU", "MEMORY"]
         },
         "value": {
-          "type": "string"
+          "type": "string",
+          "title": "Value",
+          "description": "The value for the resource type"
         }
       },
       "additionalProperties": false,
