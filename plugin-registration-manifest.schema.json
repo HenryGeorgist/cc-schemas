@@ -1,5 +1,5 @@
 {    
-    "$id": "https://henrygeorgist.github.io/cc-schemas/action.schema.json",
+    "$id": "https://henrygeorgist.github.io/cc-schemas/plugin-registration-manifest.schema.json",
     "type": "object",
     "properties": {
         "name": {
