@@ -1,5 +1,6 @@
 {
     "$id": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json",
+    "type": "object",
     "properties": {
         "name": {
         "type": "string",
@@ -22,6 +23,5 @@
         }
     },
     "required": ["name", "store_type", "profile", "params"],
-    "additionalProperties": false,
-    "type": "object"
+    "additionalProperties": false
 }

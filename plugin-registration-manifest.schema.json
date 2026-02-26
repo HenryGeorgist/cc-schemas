@@ -1,0 +1,51 @@
+{    
+    "$id": "https://henrygeorgist.github.io/cc-schemas/action.schema.json",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "image_and_tag": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "command":{
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "compute_environment":{
+              "type": "array",
+              "title": "Resource Requirements",           
+              "items": {
+                "type": "object",
+                "properties": {
+                    "resource_type": {
+                      "type": "string",
+                      "title": "Resource Type",
+                      "description": "This allows you to set the number of vCPUs or Memory applied to the container for this manifest",
+                      "enum":["vcpu", "memory"]
+                    },
+                    "value": {
+                      "type": "string",
+                      "title": "Value",
+                      "description": "The value for the resource type"
+                    }
+                  }
+               }
+        },
+        "environment":{
+            "title": "Environment Variables",
+            "description": "Environment Variables that define plugin level Environment Variables to be added to the container at runtime.",
+            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/key-value-pairs.schema.json"}]
+        },
+        "credentials":{
+            "title": "Attached Credentials",
+            "description": "Credentials that define plugin level access to assigned resources (like storage).",
+            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/key-value-pairs.schema.json"}]
+        }
+    }
+}
