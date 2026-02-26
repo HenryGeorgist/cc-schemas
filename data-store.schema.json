@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json",
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/data-store.schema.json",
     "type": "object",
     "properties": {
         "name": {
@@ -19,7 +19,7 @@
         "description": "The profie is used to support associating credentials to the store within the container"
         },
         "params": {
-            "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}]
+            "allOf": [ { "$ref": "https://usace-cloud-compute.github.io/cc-schemas/payload-attributes.schema.json"}]
         }
     },
     "required": ["name", "store_type", "profile", "params"],

@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json",
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/path-and-data-path.schema.json",
     "type": "object",
     "patternProperties": {
         "^[a-z0-9]+(-[a-z0-9]+)*$": {

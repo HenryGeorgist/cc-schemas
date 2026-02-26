@@ -1,5 +1,5 @@
 {
-  "$id": "https://henrygeorgist.github.io/cc-schemas/compute-manifest.schema.json",
+  "$id": "https://usace-cloud-compute.github.io/cc-schemas/compute-manifest.schema.json",
     "properties": {
       "manifest_name": {
         "type": "string",
@@ -22,24 +22,24 @@
         "title": "Stores",
         "type": "array",
         "items":{
-          "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json"}]
+          "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-store.schema.json"}]
         }
       },
       "inputs": {
         "title": "Inputs",
         "type": "object",
-        "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/plugin-inputs.schema.json"}]
+        "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/plugin-inputs.schema.json"}]
       },
       "outputs": {
         "title": "Outputs",
         "type": "array",
         "items":{
-          "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+          "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-source.schema.json"}]
         }
       },
       "actions": {
         "items": {
-          "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/action.schema.json"}]
+          "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/action.schema.json"}]
         },
         "type": "array",
         "title": "Actions"
@@ -61,7 +61,7 @@
       },
       "resource_requirements": {
         "items": {
-          "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/resource-requirement.schema.json"}]
+          "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/resource-requirement.schema.json"}]
         },
         "type": "array",
         "title": "Resource Requirement Overrides"

@@ -1,13 +1,13 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/system-response.schema.json",
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/system-response.schema.json",
     "type": "object",
-    "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/compute-manifest.schema.json"}],
+    "allOf": [ { "$ref": "https://usace-cloud-compute.github.io/cc-schemas/compute-manifest.schema.json"}],
     "properties": {
         "inputs": {
-            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/plugin-inputs.schema.json"}],
+            "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/plugin-inputs.schema.json"}],
             "properties": {
                 "payload_attributes":{
-                    "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}],
+                    "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/payload-attributes.schema.json"}],
                     "properties": {
                         "scenario":{
                             "type":"string"
@@ -24,7 +24,7 @@
         "actions":{
             "minItems": 1,
             "contains":{
-                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/all-samples-action.schema.json"}]
+                "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/all-samples-action.schema.json"}]
             }
         }
 

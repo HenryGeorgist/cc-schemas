@@ -1,11 +1,11 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/s3-and-fs-data-store.schema.json",
-    "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/data-store.schema.json"}],
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/s3-and-fs-data-store.schema.json",
+    "allOf": [ { "$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-store.schema.json"}],
     "properties": {
         "params": {
             "title": "Parameters",
             "description": "Parameters that govern behavior of the data store, specifically root.",
-            "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}],
+            "allOf": [ { "$ref": "https://usace-cloud-compute.github.io/cc-schemas/payload-attributes.schema.json"}],
             "required": ["root"]
         }
     }

@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/key-value-pair.schema.json",
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/key-value-pair.schema.json",
     "type": "object",
     "properties": {
         "key": {

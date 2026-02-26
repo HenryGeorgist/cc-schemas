@@ -1,23 +1,23 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/plugin-inputs.schema.json",
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/plugin-inputs.schema.json",
     "type": "object",
     "properties": {
         "environment": {
             "title": "Environment Variables",
             "description": "Environment Variables that will override plugin Environment Variables or be added to the container at runtime.",
-            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/key-value-pairs.schema.json"}]
+            "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/key-value-pairs.schema.json"}]
         },
         "payload_attributes":{
             "title": "Payload Attributes",
             "description": "The global attributes that will be used for substitution or parameterization",
-            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}]
+            "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/payload-attributes.schema.json"}]
         },
         "data_sources": {
             "type": "array",
             "title": "Input Data Sources",
             "description": "The global input data sources for the compute manifest.",
             "items":{
-                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+                "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-source.schema.json"}]
             }
         },
         "parameters": {

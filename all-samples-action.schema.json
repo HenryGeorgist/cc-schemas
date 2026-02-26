@@ -1,6 +1,6 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/all-samples-action.schema.json",
-    "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/action.schema.json"}],
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/all-samples-action.schema.json",
+    "allOf": [ { "$ref": "https://usace-cloud-compute.github.io/cc-schemas/action.schema.json"}],
     "properties": {
         "name":{
             "type": "string",
@@ -9,18 +9,18 @@
         "inputs":{
             "type": "array",
             "items":{
-                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+                "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-source.schema.json"}]
             },
             "minItems":1,
             "contains":{
-                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}],
+                "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-source.schema.json"}],
                 "properties":{
                     "name":{
                         "type": "string",
                         "enum": ["fragilitycurve"]
                     },
                     "paths":{
-                        "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}],
+                        "allOf":[{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/path-and-data-path.schema.json"}],
                         "required": ["default"]
                     }
                 }
@@ -29,25 +29,25 @@
         "outputs":{
             "type": "array",
             "items":{
-                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}]
+                "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-source.schema.json"}]
             },
             "minItems":1,
             "contains":{
-                "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/data-source.schema.json"}],
+                "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/data-source.schema.json"}],
                 "properties":{
                     "name":{
                         "type": "string",
                         "enum": ["failure_elevations"]
                     },
                     "paths":{
-                        "allOf":[{"$ref": "https://henrygeorgist.github.io/cc-schemas/path-and-data-path.schema.json"}],
+                        "allOf":[{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/path-and-data-path.schema.json"}],
                         "required": ["default", "event"]
                     }
                 }
             }
         },
         "attributes": {
-            "allOf": [ { "$ref": "https://henrygeorgist.github.io/cc-schemas/payload-attributes.schema.json"}],
+            "allOf": [ { "$ref": "https://usace-cloud-compute.github.io/cc-schemas/payload-attributes.schema.json"}],
             "properties":{
                 "seeds-format":{
                     "type":"boolean"

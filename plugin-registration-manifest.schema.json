@@ -1,5 +1,5 @@
 {    
-    "$id": "https://henrygeorgist.github.io/cc-schemas/plugin-registration-manifest.schema.json",
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/plugin-registration-manifest.schema.json",
     "type": "object",
     "properties": {
         "name": {
@@ -40,12 +40,12 @@
         "environment":{
             "title": "Environment Variables",
             "description": "Environment Variables that define plugin level Environment Variables to be added to the container at runtime.",
-            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/key-value-pairs.schema.json"}]
+            "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/key-value-pairs.schema.json"}]
         },
         "credentials":{
             "title": "Attached Credentials",
             "description": "Credentials that define plugin level access to assigned resources (like storage).",
-            "allOf": [{"$ref": "https://henrygeorgist.github.io/cc-schemas/key-value-pairs.schema.json"}]
+            "allOf": [{"$ref": "https://usace-cloud-compute.github.io/cc-schemas/key-value-pairs.schema.json"}]
         }
     }
 }

@@ -1,5 +1,5 @@
 {
-    "$id": "https://henrygeorgist.github.io/cc-schemas/resource-requirement.schema.json",
+    "$id": "https://usace-cloud-compute.github.io/cc-schemas/resource-requirement.schema.json",
     "type": "object",
     "properties": {
         "resource_type": {
